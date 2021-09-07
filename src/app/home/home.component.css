@@ -1,0 +1,10 @@
+header{
+    font-size: 45px;
+    margin: 10px;
+    padding: 10px;
+}
+
+.container{
+    background: url('bg1.jpeg');
+    padding: 40px;
+}

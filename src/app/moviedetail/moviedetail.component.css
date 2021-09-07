@@ -1,0 +1,17 @@
+h2{
+    border: 2px solid blue;
+    width: 350px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px;
+    background-color: rgb(78, 211, 60);
+}
+
+.container{
+    background: url('bg1.jpeg');
+    height: 700px;
+    text-align: center;
+}
+
+h3{
+    color: white;
+}

@@ -1,18 +1,24 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
-import { AppRoutingModule } from './app-routing.module';
+import { FormsModule } from '@angular/forms';
+// import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-
+import { LoginComponent } from './login/login.component';
+import { HomeComponent } from './home/home.component';
+import { AppRoutingModule } from './app-routing/app-routing.module';
+import { LoginService } from './login.service';
+import { MoviedetailComponent } from './moviedetail/moviedetail.component';
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    LoginComponent,
+    HomeComponent,
+    MoviedetailComponent
   ],
   imports: [
-    BrowserModule,
-    AppRoutingModule
+    BrowserModule,FormsModule,AppRoutingModule
   ],
-  providers: [],
+  providers: [LoginService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

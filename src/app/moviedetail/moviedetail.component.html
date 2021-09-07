@@ -1,0 +1,25 @@
+
+<div class="container">
+    <div>
+        <br><br>
+        <ul>
+            <li><h3 *ngFor='let m of movie' style="color: rgb(41, 206, 96);">* {{m.mname}}  {{m.timing}} </h3></li>
+        </ul>
+        
+        <br>
+        <h2 *ngIf='active'>Ticket Fair : - 200 /-</h2>
+    
+    </div>
+    <br><br><br><br>
+    <div class="btn btn-primary" (click)='dis()'>display details</div>
+    &nbsp;
+    <div class="btn btn-primary" (click)='xamt()'>display total amt</div>
+    <br><br><br>
+    <div>
+        <h2 *ngIf='amt'>Total Bill Amount To : -  {{a}} &#8377;  </h2>
+    </div>
+</div>
+
+<footer style="margin: 0px 40%; width: 500px;">
+    <b> &copy; Copyrights Reserved Vittal Screenings Limited </b>
+  </footer>
